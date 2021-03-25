@@ -13,7 +13,7 @@ var bartscroll = (function () {
     trigger_distance = trigger_distance || 400;
     var lastOffset;
 
-    var scrollFart = function() {
+    var scrollBart = function() {
       var scrollOffset = Math.floor(window.scrollY / trigger_distance);
       if (lastOffset !== scrollOffset) {
         playAudio();
@@ -22,15 +22,15 @@ var bartscroll = (function () {
     };
 
     var timer;
-    function resizeFart() {
+    function resizeBart() {
       if (timer) {
         clearTimeout(timer);
       }
       timer = setTimeout(function(){ playAudio(); }, 200);
     };
 
-    window.addEventListener('scroll', scrollFart, false);
-    window.addEventListener('resize', resizeFart, false);
+    window.addEventListener('scroll', scrollBart, false);
+    window.addEventListener('resize', resizeBart, false);
   };
 
   function playAudio(position){
