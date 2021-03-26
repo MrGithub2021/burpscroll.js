@@ -1,4 +1,4 @@
-# burpscroll.js
+# bartscroll.js
 Everyone burps and farts. 
 Now your websites can too!!!
 🤡
